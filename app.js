@@ -111,6 +111,9 @@ function checkTheOrder() {
 
   if (arr.length === cells.length - 1 && isEqual) {
     result.style.display = "block";
+    [...cells].forEach(function(cell) {
+      cell.style.opacity = 1;
+    });
   }
 }
 
